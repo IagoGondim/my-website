@@ -21,7 +21,7 @@ export const projectObj = [
     nameS: "API RESTful HTTP",
     title: "API RESTful HTTP",
     description:
-      "API RESTful HTTP para cadastro de clientes e endereços com contratos e eventos de contratos de clientes e pontos entre clientes e endereços, ferramentas utilizadas foram node.js, typescript, postgresql, docker, typeorm e insomnia",
+      "API RESTful HTTP para cadastro de clientes e endereços com contratos e eventos de contratos de clientes e pontos entre clientes e endereços, as ferramentas utilizadas nesse projeto foram node.js, typescript, postgresql, docker, typeorm e insomnia",
       link: 'https://github.com/IagoGondim/API-RestFul-HTTP'
   },
   
