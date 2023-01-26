@@ -32,7 +32,7 @@ Ferramentas utilizadas no projeto
 Acesse o link abaixo para ver meu portfolio em produção
 
 ```
-https://iagogondim.netlify.app/
+https://iagogondim.github.io/my-website/
 ```
 
 <div align="center" >
