@@ -36,7 +36,7 @@ const Footer = () => {
                 Ferreira
               </SubTitle>
               <Description>
-                Estou aberto a todos, envie-me um email ou podemos nos falar pelo whatsapp.
+                Estou aberto a todos, envie-me um email ou podemos conversar pelo linkedIn.
                 <br/>
                 <br/>
                 Acredito no trabalho árduo, pesquisa e método como ingredientes para entregar os melhores resultados possiveis
