@@ -90,6 +90,8 @@ export const Input = styled.input`
   font-size: 1.125rem;
   outline: none;
   transition: 0.5s;
+  font-family: 'Roboto Mono', monospace;
+
   &:focus {
     border-color: #252b38;
   }
@@ -119,6 +121,8 @@ export const TextArea = styled.textarea`
   outline: none;
   transition: 0.5s;
   resize: none;
+  font-family: 'Roboto Mono', monospace;
+
 
   &:focus {
     border-color: #252b3e;
@@ -157,6 +161,8 @@ export const Span = styled.span`
   justify-content: flex-start;
   color: #f7f8fa;
   font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+
 `;
 
 export const InfoMe = styled.div`
@@ -170,6 +176,7 @@ export const InfoMe = styled.div`
 export const Description = styled.p`
   color: #f7f8fa;
   font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
 `;
 
 export const Button = styled.button`
@@ -186,6 +193,8 @@ export const Button = styled.button`
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  font-family: 'Roboto Mono', monospace;
+
 
   &:hover {
     background-position: 100% 0;

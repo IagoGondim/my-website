@@ -51,6 +51,7 @@ export const TopLine = styled.p`
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 700px;
+
 `;
 
 export const ContainerWrapper = styled.div`

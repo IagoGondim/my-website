@@ -140,6 +140,8 @@ export const Subtitle = styled.p`
   font-size: 1.125rem;
   line-height: 24px;
   color: #f7f8fa;
+  font-family: 'Roboto Mono', monospace;
+
       @media screen and (max-width: 768px) {
     font-size: 1rem;
   }

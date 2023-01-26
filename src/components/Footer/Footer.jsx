@@ -36,10 +36,10 @@ const Footer = () => {
                 Ferreira
               </SubTitle>
               <Description>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Distinctio nisi quidem minus, iste sit dolorem ipsam officiis,
-                incidunt eaque magnam totam sequi suscipit eum rem est
-                voluptatum, magni quod cumque.
+                Estou aberto a todos, envie-me um email ou podemos nos falar pelo whatsapp.
+                <br/>
+                <br/>
+                Acredito no trabalho árduo, pesquisa e método como ingredientes para entregar os melhores resultados possiveis
               </Description>
             </InfoMe>
             <AddressWrapper>

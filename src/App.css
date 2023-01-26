@@ -6,19 +6,6 @@
 
 }
 
-.hidden{
-  opacity: 0;
-  filter: blur(4px);
-  transform: translateX(-100%);
-  transition: all 1000ms ease-in-out;
-}
-
-.show{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
 
 svg{
   position: absolute;

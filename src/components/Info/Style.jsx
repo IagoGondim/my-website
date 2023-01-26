@@ -148,7 +148,7 @@ export const Subtitle = styled.p`
   font-size: 1.125rem;
   line-height: 24px;
   color: #f7f8fa;
-  font-family: "Neue Machina";
+  font-family: 'Roboto Mono', monospace;
 `;
 
 export const ImgWrap = styled.div`
