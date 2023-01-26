@@ -29,10 +29,10 @@ Ferramentas utilizadas no projeto
 
 ## 🖥️ Demonstração
 
-Ainda não realizei o deploy
+Acesse o link abaixo para ver meu portfolio em produção
 
 ```
-... Link para acessar o projeto em produção
+https://iagogondim.netlify.app/
 ```
 
 <div align="center" >
