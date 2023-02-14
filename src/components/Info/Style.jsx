@@ -124,7 +124,8 @@ export const TopLine = styled.p`
   width: 200px;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.4rem;
+  line-height: 1.06;
   text-transform: uppercase;
   font-family: "Work Sans", sans-serif;
 `;
@@ -148,7 +149,7 @@ export const Subtitle = styled.p`
   font-size: 1.125rem;
   line-height: 24px;
   color: #f7f8fa;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 `;
 
 export const ImgWrap = styled.div`

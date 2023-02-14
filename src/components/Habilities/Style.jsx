@@ -22,7 +22,7 @@ const moveBottomAnimation = keyframes`
   }
   `;
 
-  const moveRightAnimation = keyframes`
+const moveRightAnimation = keyframes`
   0%{
     filter: blur(2px);
     transform: translateX(-100px)
@@ -67,7 +67,6 @@ export const HabilitiesPage = styled.div`
   }
 `;
 
-
 export const TextWrapper = styled.div`
   padding-top: 0;
   display: flex;
@@ -91,7 +90,8 @@ export const TopLine = styled.p`
   -moz-text-fill-color: transparent;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 1.4px;
+  letter-spacing: 0.4rem;
+  line-height: 1.06;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -125,7 +125,7 @@ export const Heading = styled.h1`
     left: 0.5em;
     margin-right: -50%;
   }
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 3rem;
   }
 
@@ -140,14 +140,14 @@ export const Subtitle = styled.p`
   font-size: 1.125rem;
   line-height: 24px;
   color: #f7f8fa;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 
-      @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
 
   @media screen and (max-width: 450px) {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 `;
 
@@ -156,21 +156,20 @@ export const ImgWrap = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  width: 100%;
-  margin: 3rem 0 0 0 ;
+  width: 90%;
+  margin: 3rem 0 0 0;
   background: #252b38;
   box-shadow: 0px 1px 10px 10px rgba(195, 100, 250, 0.5);
   border-radius: 10px;
   padding: 1rem;
 
-  @media screen and (max-width: 768px){
-  max-width: 700px;
+  @media screen and (max-width: 768px) {
+    max-width: 700px;
   }
-    @media screen and (max-width: 450px){
-  max-width: 400px;
+  @media screen and (max-width: 450px) {
+    max-width: 400px;
   }
 `;
-
 
 export const Img = styled.img`
   width: 90px;
@@ -189,12 +188,11 @@ export const Img = styled.img`
     -webkit-filter: drop-shadow(5px 5px 5px black);
   }
 
-    @media screen and (max-width: 768px){
-  width: 60px;
-
+  @media screen and (max-width: 768px) {
+    width: 60px;
   }
-    @media screen and (max-width: 450px){
-width: 45px;
+  @media screen and (max-width: 450px) {
+    width: 45px;
   }
 `;
 
@@ -209,5 +207,3 @@ export const HabilitiesWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
-
-

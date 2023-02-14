@@ -1,23 +1,24 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { projectObj, sliderSettings } from "./Data";
+import { ReactComponent as ArrowLeft } from "../../images/arrowleft.svg";
+import { ReactComponent as ArrowRight } from "../../images/arrowright.svg";
 import {
+  Button,
+  ButtonContainer,
+  CarouselImage,
   Container,
   ContainerWrapper,
-  Card,
-  Img,
-  NameS,
   Content,
-  Title,
   DescriptionP,
-  Arrow,
-  ArrowS,
-  CardWrapper,
-  TopLine,
-  Button
+  Heading,
+  ImageWrapper,
+  NameS,
+  ReviewSlider,
+  Row,
 } from "./Style";
 
-import { projectObj } from "./Data";
-
-const ProjectsSection = () => {
+const Carousel = () => {
+  const [sliderRef, setSliderRef] = useState(null);
   const myRef = useRef(null);
   const [myElementIsVisible, setMyElementIsVisible] = useState();
 
@@ -28,7 +29,7 @@ const ProjectsSection = () => {
   const options = {
     root: null,
     rootmargin: "0px",
-    threshold: 0.3,
+    threshold: 0.4,
   };
   useEffect(() => {
     const observer = new IntersectionObserver(callbackFunction, options);
@@ -39,50 +40,45 @@ const ProjectsSection = () => {
     };
   }, [myRef, options]);
 
-    const hanldeRedirect = (url) => {
+  const hanldeRedirect = (url) => {
     window.open(url);
   };
   return (
-    <>
-      <Container id="projects" ref={myRef}>
-        <ContainerWrapper
-          className={`${"habilitiesSection "}${
-            myElementIsVisible
-              ? "animateHabilitiesIsVisible"
-              : "animateHabilitiesNotIsVisible"
-          }`}
-        >
-          <TopLine>Projetos</TopLine>
-          <CardWrapper>
-            {projectObj.map((projectObj) => {
-              return (
-                <Card >
-                  <Img
-                    className="img"
-                    src={projectObj.img}
-                    alt={projectObj.alt}
-                  ></Img>
-                  <NameS className="span-project">{projectObj.nameS}</NameS>
-                  <Content className="content" >
-                    <Title>{projectObj.title}</Title>
-                    <DescriptionP>{projectObj.description}</DescriptionP>
-                    <Button className="bn20" onClick={() =>
-                hanldeRedirect(projectObj.link)
-              }>GitHub</Button>
-                  </Content>
-                  <Arrow className="arrow">
-                    <ArrowS>&#8673;</ArrowS>
-                  </Arrow>
-                </Card>
-              );
-            })}
-          </CardWrapper>
-        </ContainerWrapper>
-      </Container>
-    </>
+    <Container ref={myRef}>
+      <ContainerWrapper
+        className={`${"habilitiesSection "}${
+          myElementIsVisible
+            ? "animateHabilitiesIsVisible"
+            : "animateHabilitiesNotIsVisible"
+        }`}
+      >
+        <Row>
+          <Heading>Projetos</Heading>
+          <ButtonContainer>
+            <ArrowLeft className="left" onClick={sliderRef?.slickPrev} />
+            <ArrowRight className="right" onClick={sliderRef?.slickNext} />
+          </ButtonContainer>
+        </Row>
+        <ReviewSlider {...sliderSettings} ref={setSliderRef}>
+          {projectObj.map((projectObj, index) => (
+            <ImageWrapper key={index}>
+              <CarouselImage src={projectObj.img} className="img" />
+              <Content className="content">
+                <NameS className="span-project">{projectObj.nameS}</NameS>
+                <DescriptionP>{projectObj.description}</DescriptionP>
+              </Content>
+              <Button
+                className="bn20"
+                onClick={() => hanldeRedirect(projectObj.link)}
+              >
+                GitHub
+              </Button>
+            </ImageWrapper>
+          ))}
+        </ReviewSlider>
+      </ContainerWrapper>
+    </Container>
   );
 };
 
-export default ProjectsSection;
-
-
+export default Carousel;

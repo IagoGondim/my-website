@@ -1,3 +1,4 @@
+import Slider from "react-slick";
 import styled, { keyframes } from "styled-components";
 
 const moveTopAnimation = keyframes`
@@ -24,41 +25,17 @@ const moveBottomAnimation = keyframes`
 
 export const Container = styled.div`
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
   background-color: #120e28;
-`;
-
-export const TopLine = styled.p`
-  background-image: linear-gradient(120deg, #3788b6, #c364fa);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  position: absolute;
-  width: 200px;
-  height: 40px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 700px;
-
 `;
 
 export const ContainerWrapper = styled.div`
   width: 100%;
   max-width: 80rem;
+  margin: auto;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 
   &.animateHabilitiesIsVisible {
@@ -77,65 +54,119 @@ export const ContainerWrapper = styled.div`
   }
 `;
 
-export const CardWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+export const Row = styled.div`
+  display: flex;
+  width: 100%;
   align-items: center;
-  @media screen and (max-width: 768px){
-  grid-template-columns: 1fr;
+  justify-content: center;
+
+  @media screen and (max-width: 450px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 `;
 
-export const Card = styled.div`
+export const Heading = styled.h2`
+  width: 100%;
+  font-size: 2rem;
+  background-image: linear-gradient(120deg, #3788b6, #c364fa);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  letter-spacing: 0.4rem;
+  line-height: 1.06;
+  text-align: start;
+  @media screen and (max-width: 450px) {
+    text-align: center;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+
+  .left {
+    margin-right: 5rem;
+  }
+  .right {
+    margin-left: 5rem;
+  }
+
+  & svg {
+    margin: 0 1rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+  }
+  & svg:hover {
+    scale: 1.2;
+  }
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+  }
+`;
+
+export const ReviewSlider = styled(Slider)`
+  width: 100%;
+  .slick-track {
+    display: flex;
+    padding: 30px;
+    gap: 3rem;
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1;
+    outline: none;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  width: 90%;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   border-radius: 16px;
+  border: none;
+  outline: none;
+  min-height: 430px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
-  width: 360px;
+  background-image: linear-gradient(#672abf, #380e74);
+`;
+
+export const CarouselImage = styled.img`
+  width: 100%;
+  height: 200px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+`;
+
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
-  overflow: hidden;
-  background-image: linear-gradient(#333, #333);
-  transition: all 500ms;
-  margin-left: 10px;
-
-  &:hover {
-    background-image: linear-gradient(#672abf, #380e74);
-  }
-
-  &:hover .img {
-    width: 400px;
-    height: 230px;
-    opacity: 1;
-  }
-
-  &:hover .arrow {
-    transform: rotate(0);
-  }
-
-  &:hover .content {
-    height: 260px;
-    padding: 20px;
-    opacity: 1;
-    transition: translateY(0);
-  }
+  padding: 0.5rem;
+  min-height: 201px;
 `;
-export const Img = styled.img`
-  width: 360px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  transition: all 500ms;
-  z-index: 2;
-  position: relative;
-  opacity: 0.8;
-  background-size: cover;
-  background-position: center;
-`;
+
 export const NameS = styled.div`
   text-transform: uppercase;
   font-size: 24px;
@@ -144,23 +175,7 @@ export const NameS = styled.div`
   transition: all 500ms;
   color: #f7f8fa;
 `;
-export const Content = styled.div`
-  position: relative;
-  padding: 0px 20px;
-  height: 0;
-  opacity: 0;
-  transition: all 500ms;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-  transform: translateY(30px);
 
-`;
-export const Title = styled.div`
-  font-size: 20px;
-  font-weight: 600;
-  color: #f7f8fa;
-`;
 export const DescriptionP = styled.div`
   margin: 0;
   font-size: 14px;
@@ -172,9 +187,9 @@ export const DescriptionP = styled.div`
 
 export const Button = styled.button`
   display: flex;
-  justify-content: center;
-  margin: 30px auto 0 auto;
-  padding: 0.875rem 2rem;
+  justify-content: flex-end;
+  margin: 0 auto 1rem auto;
+  padding: 0.5rem 1.5rem;
   color: #f7f8fa;
   font-weight: 300;
   font-size: 1rem;
@@ -183,7 +198,7 @@ export const Button = styled.button`
   text-align: center;
   border: none;
   background-size: 300% 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   -o-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -209,14 +224,4 @@ export const Button = styled.button`
     );
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
   }
-
-`;
-
-export const Arrow = styled.div`
-  padding: 15px;
-  transform: rotate(-180deg);
-  transition: all 500ms;
-`;
-export const ArrowS = styled.div`
-  font-size: 24px;
 `;

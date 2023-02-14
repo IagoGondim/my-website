@@ -11,8 +11,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
     "react-scroll": "^1.8.9",
+    "react-slick": "^0.29.0",
     "styled-components": "^5.3.6",
     "typewriter-effect": "^2.19.0",
     "vite-plugin-svgr": "^2.4.0"

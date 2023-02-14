@@ -1,23 +1,11 @@
 import react from "../../images/react.svg";
-import css3 from "../../images/css3.svg";
-import html5 from "../../images/html5.svg";
+import php from "../../images/php-logo.svg";
 import javascript from "../../images/javascript.svg";
 import typescript from "../../images/typescript.svg";
 import vuejs from "../../images/vue-js.svg";
 import nodejs from "../../images/nodejs.svg";
 
-
 export const HabilitiesImg = [
-  {
-    id: "html5",
-    img: html5,
-    alt: "html5_img",
-  },
-  {
-    id: "css3",
-    img: css3,
-    alt: "css3_img",
-  },
   {
     id: "javascript",
     img: javascript,
@@ -27,6 +15,11 @@ export const HabilitiesImg = [
     id: "typescript",
     img: typescript,
     alt: "typescript_img",
+  },
+  {
+    id: "php",
+    img: php,
+    alt: "php_img",
   },
   {
     id: "nodejs",
@@ -43,7 +36,6 @@ export const HabilitiesImg = [
     img: vuejs,
     alt: "vuejs_img",
   },
-
 ];
 
 export const Data = {
@@ -54,14 +46,14 @@ export const Data = {
         "React faz com que a criação de UIs interativas seja uma tarefa fácil. Crie views simples para cada estado na sua aplicação, e o React irá atualizar e renderizar de forma eficiente apenas os componentes necessários na medida em que os dados mudam.",
       topLine: "Habilidades",
       headline: "React.js",
-      visible: false,
+      visible: true,
     },
     {
-      id: "css3",
+      id: "php",
       description:
-        "CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.",
+        "Uma linguagem de script popular com um propósito geral que é especialmente adequada para desenvolvimento web. Rápido, flexível e pragmático, o PHP alimenta tudo, desde o seu blog até os sites mais populares do mundo",
       topLine: "Habilidades",
-      headline: "CSS 3",
+      headline: "PHP",
       visible: false,
     },
     {
@@ -97,14 +89,5 @@ export const Data = {
       headline: "Vue.js",
       visible: false,
     },
-    {
-      id: "html5",
-      description:
-        "HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.",
-      topLine: "Habilidades",
-      headline: "HTML 5",
-      visible: true,
-    },
-    
   ],
 };

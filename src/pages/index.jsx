@@ -4,20 +4,20 @@ import Banner from "../components/Banner/Banner";
 import Info from "../components/Info/Info";
 import { homeObjOne } from "../components/Info/Data";
 import Habilities from "../components/Habilities/Habilities";
-import ProjectsSection from "../components/Projects";
-import FooterSection from "../components/Footer/Footer";
+import Footer from "../components/Footer/Footer";
+import Carousel from "../components/Projects";
+import { GlobalStyle } from "../globalStyles";
 
 const Home = () => {
-
   return (
     <>
-      <Navbar  />
+      <GlobalStyle />
+      <Navbar />
       <Banner />
       <Info {...homeObjOne} />
       <Habilities />
-      <ProjectsSection />
-      <FooterSection />
-      
+      <Carousel />
+      <Footer />
     </>
   );
 };
