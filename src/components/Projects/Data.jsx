@@ -3,6 +3,7 @@ import restful from "../../images/nodetypescript.png";
 import dogs from "../../images/dogs.png";
 import tasks from "../../images/tasks.png";
 import pokemon from "../../images/pokemon.png";
+import space from "../../images/preview.jpg";
 
 export const projectObj = [
   {
@@ -12,17 +13,27 @@ export const projectObj = [
     title: "Pokedex",
     description:
       "Pokedex criada com HTML, CSS e Javascript puro, utilizando api PokeAPI",
-    link: "https://github.com/IagoGondim/pokedex",
+    github: "https://github.com/IagoGondim/pokedex",
   },
 
   {
-    img: restful,
-    alt: "restful_img",
-    nameS: "API RESTful HTTP",
-    title: "API RESTful HTTP",
+    img: dogs,
+    alt: "dogs_img",
+    nameS: "Dogs - Rede Social",
+    title: "Dogs - Rede Social",
     description:
-      "API RESTful HTTP para cadastro de clientes e endereços com contratos e eventos de contratos de clientes e pontos entre clientes e endereços, as ferramentas utilizadas nesse projeto foram node.js, typescript, postgresql, docker, typeorm e insomnia",
-    link: "https://github.com/IagoGondim/API-RestFul-HTTP",
+      "Projeto realizado no curso oferecido pela Origamid, utilizando de varias ferramentas que o React oferece. É praticamente uma rede social para cachorros semelhante ao instagram",
+    github: "https://github.com/IagoGondim/course-dogs",
+  },
+
+  {
+    img: space,
+    alt: "taks_img",
+    nameS: "Space-tourism",
+    title: "Space-tourism",
+    description:
+      "Criação de um website com react e styled-components, com responsividade para table e mobile",
+    github: "https://github.com/IagoGondim/space-tourism",
   },
 
   {
@@ -32,17 +43,19 @@ export const projectObj = [
     title: "Taks list",
     description:
       "Projeto criado com a finalidade de facilicar as minhas atividades do meu dia-dia, foram utilizados a biblioteca react, styled-components para customização e na linguagem typescript",
-    link: "https://github.com/IagoGondim/tasks-list",
+    github: "https://github.com/IagoGondim/tasks-list",
   },
+
   {
-    img: dogs,
-    alt: "dogs_img",
-    nameS: "Dogs - Rede Social",
-    title: "Dogs - Rede Social",
+    img: restful,
+    alt: "restful_img",
+    nameS: "API RESTful HTTP",
+    title: "API RESTful HTTP",
     description:
-      "Projeto realizado no curso oferecido pela Origamid, utilizando de varias ferramentas que o React oferece. É praticamente uma rede social para cachorros semelhante ao instagram",
-    link: "https://github.com/IagoGondim/course-dogs",
+      "API RESTful HTTP para cadastro de clientes e endereços com contratos e eventos de contratos de clientes e pontos entre clientes e endereços, as ferramentas utilizadas nesse projeto foram node.js, typescript, postgresql, docker, typeorm e insomnia",
+    github: "https://github.com/IagoGondim/API-RestFul-HTTP",
   },
+
   {
     img: pokemon,
     alt: "pokemon_img",
@@ -50,7 +63,7 @@ export const projectObj = [
     title: "Listagem de Pokemons",
     description:
       "Projeto realizado em php e docker para listagem de pokemons, link do repositório e instruções de como usar no botão abaixo",
-    link: "https://github.com/IagoGondim/list-pokemon",
+    github: "https://github.com/IagoGondim/list-pokemon",
   },
 ];
 

@@ -185,6 +185,11 @@ export const DescriptionP = styled.div`
   color: #f7f8fa;
 `;
 
+export const ContainerButton = styled.div`
+  display: flex;
+  width: 80%;
+`;
+
 export const Button = styled.button`
   display: flex;
   justify-content: flex-end;

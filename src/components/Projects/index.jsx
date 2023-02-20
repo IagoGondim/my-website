@@ -7,6 +7,7 @@ import {
   ButtonContainer,
   CarouselImage,
   Container,
+  ContainerButton,
   ContainerWrapper,
   Content,
   DescriptionP,
@@ -67,12 +68,14 @@ const Carousel = () => {
                 <NameS className="span-project">{projectObj.nameS}</NameS>
                 <DescriptionP>{projectObj.description}</DescriptionP>
               </Content>
-              <Button
-                className="bn20"
-                onClick={() => hanldeRedirect(projectObj.link)}
-              >
-                GitHub
-              </Button>
+              <ContainerButton>
+                <Button
+                  className="bn20"
+                  onClick={() => hanldeRedirect(projectObj.github)}
+                >
+                  GitHub
+                </Button>
+              </ContainerButton>
             </ImageWrapper>
           ))}
         </ReviewSlider>
