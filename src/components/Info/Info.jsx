@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
+import { Button } from "../Projects/Style";
 
 import {
+  A,
   Column1,
   Column2,
   Heading,
@@ -52,6 +54,11 @@ const Info = ({ id, topLine, headline, description, img, alt }) => {
                 <Heading>{headline}</Heading>
                 <Subtitle>{description}</Subtitle>
               </TextWrapper>
+              <Button className="bn20">
+                <A href="/iagocv.pdf" target="_blank" download>
+                  Download CV
+                </A>
+              </Button>
             </Column1>
             <Column2>
               <ImgWrap>

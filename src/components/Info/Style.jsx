@@ -152,6 +152,12 @@ export const Subtitle = styled.p`
   font-family: "Roboto Mono", monospace;
 `;
 
+export const A = styled.a`
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+`;
+
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
