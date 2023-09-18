@@ -67,6 +67,18 @@ export const HabilitiesPage = styled.div`
   }
 `;
 
+export const HabilitiesWrapper = styled.div`
+  max-width: 80rem;
+  width: 100%;
+  height: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
 export const TextWrapper = styled.div`
   padding-top: 0;
   display: flex;
@@ -194,16 +206,4 @@ export const Img = styled.img`
   @media screen and (max-width: 450px) {
     width: 45px;
   }
-`;
-
-export const HabilitiesWrapper = styled.div`
-  max-width: 80rem;
-  width: 100%;
-  height: 350px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 `;

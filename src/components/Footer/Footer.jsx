@@ -46,8 +46,6 @@ const Footer = () => {
               <Span>
                 <Icons src={address}></Icons>
                 Brasil
-                <br />
-                Juazeiro do Norte - Ce
               </Span>
               <Span>
                 <Icons src={phone}></Icons>
@@ -55,12 +53,12 @@ const Footer = () => {
               </Span>
               <Span>
                 <Icons src={email}></Icons>
-                iago-gondim@hotmail.com
+                iagogondim200@gmail.com
               </Span>
             </AddressWrapper>
             <FormWrapper>
               <FormInfo
-                action="https://formsubmit.co/iago-gondim@hotmail.com"
+                action="https://formsubmit.co/iagogondim200@gmail.com"
                 method="POST"
               >
                 <Input placeholder="Nome" type="text" name="name" required />

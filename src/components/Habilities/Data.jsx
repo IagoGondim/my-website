@@ -1,8 +1,8 @@
 import react from "../../images/react.svg";
-import php from "../../images/php-logo.svg";
+import kotlin from "../../images/kotlin.svg";
+import java from "../../images/java.svg";
 import javascript from "../../images/javascript.svg";
 import typescript from "../../images/typescript.svg";
-import vuejs from "../../images/vue-js.svg";
 import nodejs from "../../images/nodejs.svg";
 
 export const HabilitiesImg = [
@@ -17,9 +17,14 @@ export const HabilitiesImg = [
     alt: "typescript_img",
   },
   {
-    id: "php",
-    img: php,
-    alt: "php_img",
+    id: "java",
+    img: java,
+    alt: "java_img",
+  },
+  {
+    id: "kotlin",
+    img: kotlin,
+    alt: "kotlin_img",
   },
   {
     id: "nodejs",
@@ -30,11 +35,6 @@ export const HabilitiesImg = [
     id: "react",
     img: react,
     alt: "react_img",
-  },
-  {
-    id: "vuejs",
-    img: vuejs,
-    alt: "vuejs_img",
   },
 ];
 
@@ -49,11 +49,11 @@ export const Data = {
       visible: true,
     },
     {
-      id: "php",
+      id: "java",
       description:
-        "Uma linguagem de script popular com um propósito geral que é especialmente adequada para desenvolvimento web. Rápido, flexível e pragmático, o PHP alimenta tudo, desde o seu blog até os sites mais populares do mundo",
+        "Java é uma linguagem de programação e plataforma de computação liberada pela primeira vez pela Sun Microsystems em 1995. De um início humilde, ela evoluiu para uma grande participação no mundo digital dos dias atuais, oferecendo a plataforma confiável na qual muitos serviços e aplicativos são desenvolvidos.",
       topLine: "Habilidades",
-      headline: "PHP",
+      headline: "Java",
       visible: false,
     },
     {
@@ -82,11 +82,11 @@ export const Data = {
       visible: false,
     },
     {
-      id: "vuejs",
+      id: "kotlin",
       description:
-        "É um framework JavaScript open source para a criação de aplicações web, criado por Evan You em 2014. O Vue.js possibilita criar aplicações de forma reativa. O Vue.js faz a utilização de um DOM virtual, o que faz com que seja extremamente performático na maioria das situações. Além disso, conta com uma arquitetura muito bem estruturada por meio da criação de componentes reusáveis.",
+        "O Kotlin é uma linguagem de programação completamente open source, multiplataforma e multiparadigma. Ela tem forte influência de C#, Scala, Groovy e JavaScript. Na prática, ela é conhecida como a nova Java.",
       topLine: "Habilidades",
-      headline: "Vue.js",
+      headline: "kotlin",
       visible: false,
     },
   ],

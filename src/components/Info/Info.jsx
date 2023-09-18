@@ -37,18 +37,6 @@ const Info = ({ id, topLine, headline, description, img, alt }) => {
       if (myRef.current) observer.unobserve(myRef.current);
     };
   }, [myRef, options]);
-
-  const onButtonClick = () => {
-    fetch("/public/iagocv.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "iagocv.pdf";
-        alink.click();
-      });
-    });
-  };
   return (
     <>
       <InfoContainer id={id} ref={myRef}>
@@ -66,9 +54,6 @@ const Info = ({ id, topLine, headline, description, img, alt }) => {
                 <Heading>{headline}</Heading>
                 <Subtitle>{description}</Subtitle>
               </TextWrapper>
-              <Button className="bn20" onClick={onButtonClick}>
-                Download CV
-              </Button>
             </Column1>
             <Column2>
               <ImgWrap>
